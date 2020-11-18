@@ -1,0 +1,12 @@
+.app-page {
+  .sum-value {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .businesses-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

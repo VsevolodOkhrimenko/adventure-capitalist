@@ -1,0 +1,23 @@
+.business {
+  position: relative;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 10px 20px;
+  width: 50%;
+  box-sizing: border-box;
+  .action-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    &.disable {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .business {
+    width: 100%;
+  }
+}
