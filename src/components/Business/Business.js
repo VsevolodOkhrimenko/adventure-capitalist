@@ -154,10 +154,7 @@ const Business = ({ initStats, timestap, sumValue, addSumValue }) => {
 
   useEffect(() => {
     iteration()
-    return () => {
-      clearInterval(timer.current)
-    }
-  }, [childRef])
+  }, [childRef, hasManager])
 
   return bought ? (
     <div id={id} className="business">
