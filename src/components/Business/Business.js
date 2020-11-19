@@ -32,7 +32,7 @@ const Business = ({ initStats, timestap, sumValue, addSumValue }) => {
   const iterationStartRef = useRef(iterationStart)
 
   useEffect(() => {
-    // window.addEventListener('beforeunload', saveProgress)
+    window.addEventListener('beforeunload', saveProgress)
     if (progress['iterationStart']) {
       const diff = new Date().getTime() - progress['iterationStart']
       let iterations = 0
